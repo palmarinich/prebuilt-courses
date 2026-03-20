@@ -1,4 +1,4 @@
-const GITHUB_USER = 'bodie8';
+const GITHUB_USER = 'palmarinich';
 const GITHUB_REPO = 'prebuilt-courses';
 const GITHUB_FILE = 'index.html';
 const GITHUB_BRANCH = 'main';
