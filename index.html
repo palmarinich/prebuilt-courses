@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PreBuilt Courses Workflows</title>
+  <link rel="stylesheet" href="prebuilt.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+<style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style></head>
+<body>
+
+  <div class="toolbar">
+    <div class="page-header">
+      <h1>PreBuilt Courses Workflows</h1>
+      <div class="subtitle" id="subtitle">Last updated: March 20, 2026 &nbsp;·&nbsp; Managed with Claude</div>
+    </div>
+    <div class="toolbar-actions">
+      <button class="btn btn-add-card" onclick="addCard()">+ Add Card</button>
+      <button class="btn btn-reset-token" onclick="resetToken()">Reset Token</button>
+      <button class="btn btn-save" onclick="savePage()">Save</button>
+    </div>
+  </div>
+
+  <div id="toc"><a class="toc-item" href="#card-new-3" id="toc-card-new-3">Planning and Building TO DO (TMI)</a><a class="toc-item" href="#card-new-5" id="toc-card-new-5">STEP-BY-STEP (Donor)</a><a class="toc-item" href="#card-new-2" id="toc-card-new-2">STEP-BY-STEP (Recipient)</a><a class="toc-item" href="#card-new-7" id="toc-card-new-7">Proposed Original Course PRE-CHECK CHECKLIST (TMI)</a><a class="toc-item" href="#card-new-4" id="toc-card-new-4">Donor-Handoff CHECKLIST&nbsp;(Donor)</a><a class="toc-item" href="#card-prebuilt" id="toc-card-prebuilt">Post Donor-Handoff CHECKLIST (TMI)</a><a class="toc-item" href="#card-new-6" id="toc-card-new-6">Recipient Pre-flight CHECKLIST</a></div>
+
+  <div id="cards-container">
+
+    <!-- Card: Planning and Building TO DO (TMI) -->
+    <div class="card collapsed" id="card-new-3" data-collapsed="true">
+      <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
+        <span class="card-collapse-chevron">▲</span>
+      </div>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="card-drag-grip" title="Drag to reorder card">⠿</span>
+          <div class="card-title" contenteditable="true">Planning and Building TO DO (TMI)</div>
+          <span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span>
+        </div>
+        <div class="card-body">
+          <div class="card-detail-row">
+            <div class="card-detail" contenteditable="true">Things to figure out and do internally to identify responsibilities, rough spots, etc., and create workflows, communications, etc..</div>
+          </div>
+          <ul class="steps" id="steps-new-3">
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">1</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Terminology</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true"><em><strong>(There are several parties, courses and manual steps involved.&nbsp; Need consistent words for this stuff.)</strong></em><br><br><strong>Donor:</strong> Instructor who built the original course and modifies it prior to source course handoff.<div><br></div><div><strong>Recipient:</strong>&nbsp;Instructor who receives the source course and personalizes it as their own.<br><br><strong>Original course:</strong> Donor's own course that serves as the <i>basis</i> for the source course to be modified for handoff.<br><br><strong>Source Development course:</strong> The donor-modified copy of their own original course.<br><br><strong>Source Template:</strong> A "master" (sorry) copy of each source course for reuse (managed by TMI)<br><br><strong>Recipient</strong><strong>&nbsp;Development course(?):</strong>&nbsp;The recipient-modified copy of the source template course.<span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-size: 0.9rem;">&nbsp;</span><div><br><strong>Donor Handoff:</strong>&nbsp;Process of TMI obtaining the source course from the donor (donor pre-handoff cleanup &gt; TMI review &gt; TMI post-handoff cleanup &gt; TMI copy to template).<br><br><strong>Recipient</strong><strong>&nbsp;Handoff:</strong> Process of TMI providing source course to recipient (adoption shell created &gt; recipient enrolled &gt; source imported &gt;TMI consult).<br><br><strong>Pre-flight:</strong> Required manual edits by the Recipient to personalize the course.</div></div></div>
+                </div>
+              </div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">2</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Confirm source course selection criteria</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true"><div>- Criteria for Donor Courses</div>- Any deal-breakers where a course just won't work as a template?</div>
+                </div>
+              </div>
+            </li>
+            <li class="step done">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Develop source dev course Pre-Handoff Checklist (for donors)</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true">-&nbsp;<span style="font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">List of things in source course that MUST be checked, edited, removed or otherwise modified prior to handoff to TMI (personalized content, dates, etc.)</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="step done">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Determine minimal Pre-flight Checklist (for recipients)</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true">Specific elements that MUST be created/completed by the instructor in the recipient dev course prior to publishing.</div>
+                </div>
+              </div>
+            </li>
+            <li class="step done">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Develop step-by-step of all parts of the process. <em>(see cards below)</em></div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true"><strong>There are three parties involved, with responsibilities along the process.&nbsp; Map out order and who does what:</strong><br><br><strong>Donor:</strong><br>- Completes Pre-Handoff Checklist in source course.<br>- Informs TMI when source course is ready for handoff<br><br><strong>TMI:</strong><br>- Communicates with donor re: source dev course, Pre-Handoff review.<br>- Creates course shells for process (TBD who does what/when)<br>- Handles course handoffs from donor &gt; TMI/TMI &gt; recipient<div><br><strong>Recipient:</strong><br>- modifies adoption dev course (RSI, etc.)</div><div>- copies adoption dev course into official course<br><br></div><div><br><strong>Several steps involve course copies (and corresponding shells to create):</strong><br>- Original course &gt; Source Dev course, for Pre-Handoff edits by donor. (Donor)<br>- Source Dev course &gt; Source Template,&nbsp; managed by TMI, reusable. (TMI)<br>- Source Template &gt; Recipient Dev course, for Recipient (TMI)<br>- Recipient Dev course &gt; Official course, for publish and delivery to students (Recipient)<br><br></div></div>
+                </div>
+              </div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">6</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Develop messaging and form(s), etc for source/handoff/adoption processes</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true">How is each step communicated from one part to the other?&nbsp; (Donor &lt;&gt; TMI &gt; Recipient, etc). Donor indicates course to donate (form?), receiver indicates dev course to import into (form?), and so on.</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="add-step" onclick="addStep(this)">+ Add step</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card: Source Course Pre-Handoff Checklist (DONOR) -->
+    <div class="card collapsed" id="card-new-5" data-collapsed="true"><div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand"><span class="card-collapse-chevron">▲</span></div><div class="card-inner"><div class="card-header"><span class="card-drag-grip" title="Drag to reorder card">⠿</span><div class="card-title" contenteditable="true">STEP-BY-STEP (Donor)</div><span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span></div><div class="card-body"><div class="card-detail-row"><div class="card-detail" contenteditable="true"><b><i>(Some details still TBD)</i></b></div></div><ul class="steps" id="steps-new-5"><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">1</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Deans/Chairs identify possible source Instructors/courses</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Dean/chair provides selection criteria to nominated (?) instructors.- Instructors self-assess viability for project, contact TMI to participate.- (TBD) Cap on number of courses accepted -- who decides which instructors get in?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">2</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Instructor notifies TMI of proposed course to develop</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Instructor confirms willingness to participate.- Instructor provides TMI with URL of proposed original course to donate.- (TBD) How does TMI verify the instructor was suggested by a dean/chair?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Proposed original Course PRE-CHECK (TMI)</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- TMI ensures the proposed original course is suitable for use as the basis for a template ("technical" review).<div>- If course is unfit, TMI notifies the dean/chair of concerns.</div><div>- If course passes, TMI notifies the dean/chair, and instructor (follow up with Pre-Handoff Checklist).</div></div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Instructor signs agreement to develop/contribute course (?)</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Written agreement re: transfer of IP, pre-handoff responsibilities, etc (TBD)</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Source development course created, donor enrolled (TMI)</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- TMI notifies donor when development course shell is ready, provides<span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-size: 0.9rem;">&nbsp;Donor-Handoff Checklist, next steps.</span></div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">6</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Donor imports original course into source development course</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Or does TMI do this?&nbsp; How to verify that the original course used is the one indicated?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">7</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Donor edits source development course</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Completes the Donor-Handoff Checklist (r<span style="font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">emove personalization, dates, etc.)</span></div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">8</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Donor notifies TMI source when development course is ready for handoff</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Donor submits a form with course URL and any relevant notes.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">9</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">TMI reviews source course</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true"><div>- TMI ensures Donor-Handoff Checklist is complete.</div><div>- If not, work with donor to completion.</div><div>- If so, continue to post Donor-Handoff process (create master template, etc).</div></div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">10</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">TMI works with donor to address outstanding issues <i>(OPTIONAL)</i></div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Ensure Donor-Handoff Checklist is complete.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">11</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">TMI imports source development course into source template</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- This creates an archived master copy for distribution to recipients.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">12</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">TMI informs donor of approval and completion</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Donor part of the process is done.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">13</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Stipend provided to donor instructor</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Develop a badge for donors? (pending funding and reinstatement of Parchment Badges)</div></div></div></li></ul><div class="add-step" onclick="addStep(this)">+ Add step</div></div></div></div><div class="card collapsed" id="card-new-2" data-collapsed="true">
+      <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
+        <span class="card-collapse-chevron">▲</span>
+      </div>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="card-drag-grip" title="Drag to reorder card">⠿</span>
+          <div class="card-title" contenteditable="true">STEP-BY-STEP (Recipient)</div>
+          <span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span>
+        </div>
+        <div class="card-body">
+          <span class="add-card-detail" onclick="addCardDetail(this)">+ detail</span>
+          <ul class="steps" id="steps-new-2">
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">1</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Instructor hired</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- Some instructors will be existing Butte faculty, others may be new but hired in advance, others may be hired last minute, etc.</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">2</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Instructor has access to Canvas</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- New hires will need to wait to proceed until they have Canvas access.</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">* Instructor completes ORT</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">Must be completed before development shell is created. (TBD)</div></div></div>
+            </li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">* Instructor completes DET</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">Must be completed before development shell is created. (TBD)</div></div></div>
+            </li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">TMI informed of instructor/course</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">(TBD) How does TMI know which instructor needs a prebuilt course, and which one? Does the instructor need to be scheduled in a section before the process begins?</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">6</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Instructor receives recipient development course</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <div class="detail-row">
+                  <div class="step-detail" contenteditable="true"><div>- Verify ORT/DET completion?&nbsp; Criteria for deadline, cutoffs, exceptions?</div>- TMI creates a development shell for the recipient (develop course title/info standard for use via API).</div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">7</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">TMI imports source template into recipient development course</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- TMI notifies recipient of development shell ready, next steps (make first appt with TMI).</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">8</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Instructor completes TMI consultation</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- 3 hours required, minimum 2 appts.</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">9</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Instructor adds personalized content (Pre-flight Checklist)</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- RSI, accessibility, and other required elements. See Recipient Pre-flight Checklist.</div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">10</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">* Instructor completes DE Addendum</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- Developed as the instructor builds the course. TMI provides guidance during consultation appointments.</div></div></div>
+            </li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">11</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">TMI review of pre-flight content</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- Review for: RSI, accessibility, broken links, course structure/navigation, and completeness of all Pre-flight Checklist items.</div></div><div class="detail-row"><div class="step-detail" contenteditable="true">Detail</div></div></div>
+            </li>
+            <li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">12</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Instructor imports Recipient development course into official course shell</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><span class="add-detail" onclick="addDetail(this)">+ detail</span></div></li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">13</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Official course is published and delivered to students</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <span class="add-detail" onclick="addDetail(this)">+ detail</span>
+              </div>
+            </li>
+            
+            
+            
+          </ul>
+          <div class="add-step" onclick="addStep(this)">+ Add step</div>
+        </div>
+      </div>
+    </div><div class="card collapsed" id="card-new-7" data-collapsed="true"><div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand"><span class="card-collapse-chevron">▲</span></div><div class="card-inner"><div class="card-header"><span class="card-drag-grip" title="Drag to reorder card">⠿</span><div class="card-title" contenteditable="true">Proposed Original Course PRE-CHECK CHECKLIST (TMI)</div><span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span></div><div class="card-body"><div class="card-detail-row"><div class="card-detail" contenteditable="true">TMI quick review of original source course, before anyone wastes their time.</div></div><ul class="steps" id="steps-new-7"><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">1</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Course completeness</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">Is it a full course (not a shell or partial build)?</div></div></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">2</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Course age / currency</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">Has it been taught recently? Is the content still current?</div></div></div>
+  </li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Complexity</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Check for overly complex elements that may make the course difficult/unsuitable for transfer.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">3rd party content</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Ownership issues?, publisher stuff?&nbsp; OER?&nbsp; LTIs?</div></div></div></li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">5</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Accessibility</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">Are there known a11y issues that would need to be resolved before handoff?</div></div></div>
+  </li></ul><div class="add-step" onclick="addStep(this)">+ Add step</div></div></div></div><div class="card collapsed" id="card-new-4" data-collapsed="true">
+      <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
+        <span class="card-collapse-chevron">▲</span>
+      </div>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="card-drag-grip" title="Drag to reorder card">⠿</span>
+          <div class="card-title" contenteditable="true">Donor-Handoff CHECKLIST&nbsp;(Donor)</div>
+          <span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span>
+        </div>
+        <div class="card-body">
+          <span class="add-card-detail" onclick="addCardDetail(this)">+ detail</span>
+          <ul class="steps" id="steps-new-4">
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">1</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Remove or edit all personalized elements</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <span class="add-detail" onclick="addDetail(this)">+ detail</span>
+              </div>
+            </li>
+            <li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">2</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Remove instructor bio / profile references</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">Check syllabus, intro pages, About the Instructor content, etc.</div></div>
+    </div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">3</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Check media files for personalized content</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">Review videos and audio for anything course- or instructor-specific.</div></div>
+    </div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">4</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Remove or update course-specific announcements</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Remove all dates: within content (edit) and in item settings (Adjust-All)</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                <span class="add-detail" onclick="addDetail(this)">+ detail</span>
+              </div>
+            </li>
+            
+          <li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">6</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Review quiz/assignment feedback for personalized language</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+  <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+  <span class="step-num">7</span>
+  <div class="step-body">
+    <div class="step-text-wrapper">
+      <div class="step-text" contenteditable="true">Check for viability of 3rd party services</div>
+      <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+    </div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">- Publisher platforms, media tools, or any service tied to the donor's personal credentials.<div>- Some may be free and not require a user account.</div></div></div>
+  </div>
+</li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">8</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Check for broken links</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">9</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Check and fix accessibility issues</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">Alt text on images, heading structure, caption videos, etc.</div></div>
+    </div>
+  </li></ul>
+          <div class="add-step" onclick="addStep(this)">+ Add step</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card: Source Course Cleanup Checklist (TMI) -->
+    <div class="card" id="card-prebuilt" data-collapsed="false">
+      <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
+        <span class="card-collapse-chevron">▲</span>
+      </div>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="card-drag-grip" title="Drag to reorder card">⠿</span>
+          <div class="card-title" contenteditable="true">Post Donor-Handoff CHECKLIST (TMI)</div>
+          <span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span>
+        </div>
+        <div class="card-body">
+          
+          <div class="card-detail-row"><div class="card-detail" contenteditable="true">TMI reviews the donor's development course to ensure completion, then adds standardized content, and finally copies it into a permanent archived template for reuse.</div></div><ul class="steps" id="steps-prebuilt">
+            
+            
+            <li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">1</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Ensure Pre-Handoff Checklist is complete</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- Quality control before handoff.&nbsp;<div>- If not complete, TMI notifies donor or any remaining&nbsp;<span style="font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">references, dates, or course-specific content the donor missed.&nbsp; TMI works with donor&nbsp;</span><span style="font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">to remedy, as needed.<br>-If complete, TMI notifies donor of completion.</span></div></div></div>
+    </div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">2</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Notify donor of acceptance and completion</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- TMI notifies the donor the course has been accepted and the process is complete.<div>- TMI notifies the donor's dean/chair that the template is ready for recipient adoption.<br>- Award badge?</div></div></div>
+    </div>
+  </li><li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Create source template course shell</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- TMI creates template course development shell for remaining work on<span style="font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;">&nbsp;permanent template.</span></div></div></div>
+            </li>
+            <li class="step">
+              <span class="drag-grip" title="Drag to reorder">⠿</span>
+              <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div>
+              <div class="step-body">
+                <div class="step-text-wrapper">
+                  <div class="step-text" contenteditable="true">Import source course into template course shell for further development</div>
+                  <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span>
+                </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- Leave donor's development course as is.<div>- TMI makes changes in the working template (keep work separate).</div></div></div></div>
+            </li>
+            <li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Add standardized content</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true"><div>- TMI adds all standardized content components.</div>- Specific components still TBD.</div></div></div></li>
+            
+          <li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">6</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Notify dean/chair that new template is available</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- TMI notifies the relevant dean/chair that the template is ready for recipient adoption.</div></div>
+    </div>
+  </li></ul>
+          <div class="add-step" onclick="addStep(this)">+ Add step</div>
+        </div>
+      </div>
+    </div><div class="card" id="card-new-6" data-collapsed="false"><div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand"><span class="card-collapse-chevron">▲</span></div><div class="card-inner"><div class="card-header"><span class="card-drag-grip" title="Drag to reorder card">⠿</span><div class="card-title" contenteditable="true">Recipient Pre-flight CHECKLIST</div><span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span></div><div class="card-body"><span class="add-card-detail" onclick="addCardDetail(this)">+ detail</span><ul class="steps" id="steps-new-6"><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">1</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Update syllabus with personal info, office hours, and contact details</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">2</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Add instructor bio / intro content</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">3</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Record and add instructor intro video</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">4</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Set due dates and adjust course schedule</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">5</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Enable and configure instructor-specific tools</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">Zoom, Turnitin, publisher platforms, or any tool requiring personal account setup.</div></div>
+    </div>
+  </li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">6</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Add announcements</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">How many?&nbsp; What kind?&nbsp; examples?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">7</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Add module introductions</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">×</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Must be instructional in nature.&nbsp; Should be all, but MUST be at least 50% of course covered.</div></div></div></li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">9</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Verify links</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li><li class="step">
+    <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
+    <span class="step-num">10</span>
+    <div class="step-body">
+      <div class="step-text-wrapper">
+        <div class="step-text" contenteditable="true">Review accessibility</div>
+        <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
+      </div>
+      
+    <a class="add-detail" href="#">+ detail</a></div>
+  </li></ul><div class="add-step" onclick="addStep(this)">+ Add step</div></div></div></div>
+
+    <!-- Card: STEP-BY-STEP (Recipient) -->
+    
+
+  </div><!-- /cards-container -->
+
+  <div class="footer" id="footer">Last updated: March 20, 2026 &nbsp;·&nbsp; Managed with Claude</div>
+
+  <script src="prebuilt.js"></script>
+
+
+
+<div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div></body></html>
