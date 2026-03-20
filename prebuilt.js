@@ -7,7 +7,7 @@ let cardCounter = 0;
 let cachedSha = null;
 let isSaving = false;
 
-// ── Card management ──────────────────────────────────────────────────────────
+// ââ Card management ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 window.addCard = function() {
   const title = prompt('Card title:');
@@ -26,7 +26,7 @@ window.addCard = function() {
     '</div>' +
     '<div class="card-inner">' +
       '<div class="card-header">' +
-        '<span class="card-drag-grip" title="Drag to reorder card">⠿</span>' +
+        '<span class="card-drag-grip" title="Drag to reorder card">â ¿</span>' +
         '<div class="card-title" contenteditable="true">' + title.trim() + '</div>' +
         '<span class="card-delete" onclick="deleteCard(this)" title="Remove card">&times;</span>' +
       '</div>' +
@@ -78,7 +78,7 @@ function initCardsSortable() {
   });
 }
 
-// ── Step management ──────────────────────────────────────────────────────────
+// ââ Step management ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 function initStepsSortable(listId) {
   var el = document.getElementById(listId);
@@ -113,12 +113,12 @@ window.addStep = function(trigger) {
   var li = document.createElement('li');
   li.className = 'step';
   li.innerHTML =
-    '<span class="drag-grip" title="Drag to reorder">⠿</span>' +
+    '<span class="drag-grip" title="Drag to reorder">â ¿</span>' +
     '<div class="step-num" onclick="this.closest(\'.step\').classList.toggle(\'done\')" title="Mark complete">' + count + '</div>' +
     '<div class="step-body">' +
       '<div class="step-text-wrapper">' +
         '<div class="step-text" contenteditable="true">New step</div>' +
-        '<span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">&times;</span>' +
+        '<span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span>' +
       '</div>' +
       '<span class="add-detail" onclick="addDetail(this)">+ detail</span>' +
     '</div>';
@@ -137,7 +137,7 @@ window.deleteStep = function(btn) {
   }, 150);
 };
 
-// ── Detail management ────────────────────────────────────────────────────────
+// ââ Detail management ââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 window.addDetail = function(btn) {
   var body = btn.closest('.step-body');
@@ -183,7 +183,7 @@ window.removeCardDetail = function(btn) {
   card.querySelector('.card-body').insertBefore(link, steps);
 };
 
-// ── Token management ─────────────────────────────────────────────────────────
+// ââ Token management âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 function getToken() {
   var token = localStorage.getItem('gh_prebuilt_token');
@@ -199,12 +199,12 @@ window.resetToken = function() {
   alert('Token cleared. You will be prompted for a new token on next save.');
 };
 
-// ── Build & Save ─────────────────────────────────────────────────────────────
+// ââ Build & Save âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 function buildHTML() {
   var now = new Date();
   var dateStr = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  var stamp = 'Last updated: ' + dateStr + ' &nbsp;·&nbsp; Managed with Claude';
+  var stamp = 'Last updated: ' + dateStr + ' &nbsp;Â·&nbsp; Managed with Claude';
   document.getElementById('footer').innerHTML = stamp;
   document.getElementById('subtitle').innerHTML = stamp;
 
@@ -355,7 +355,7 @@ window.savePage = async function() {
   }
 };
 
-// ── Init ─────────────────────────────────────────────────────────────────────
+// ââ Init âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.steps').forEach(function(list) {
