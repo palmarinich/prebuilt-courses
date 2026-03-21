@@ -46,7 +46,7 @@
   <div id="cards-container">
 
     <!-- Card: Planning and Building TO DO (TMI) -->
-    <div class="card" id="card-new-3" data-collapsed="false">
+    <div class="card collapsed" id="card-new-3" data-collapsed="true">
       <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
         <span class="card-collapse-chevron">▲</span>
       </div>
@@ -298,7 +298,7 @@
           <div class="add-step" onclick="addStep(this)">+ Add step</div>
         </div>
       </div>
-    </div><div class="card" id="card-new-7" data-collapsed="false"><div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand"><span class="card-collapse-chevron">▲</span></div><div class="card-inner"><div class="card-header"><span class="card-drag-grip" title="Drag to reorder card">⠿</span><div class="card-title" contenteditable="true">Original Donor Course PRE-CHECKLIST (TMI)</div><span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span></div><div class="card-body"><div class="card-detail-row"><div class="card-detail" contenteditable="true"><b><i>TMI quick general review of original source course to ensure probable compatibility as basis for a template.</i></b></div></div><ul class="steps" id="steps-new-7"><li class="step">
+    </div><div class="card collapsed" id="card-new-7" data-collapsed="true"><div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand"><span class="card-collapse-chevron">▲</span></div><div class="card-inner"><div class="card-header"><span class="card-drag-grip" title="Drag to reorder card">⠿</span><div class="card-title" contenteditable="true">Original Donor Course PRE-CHECKLIST (TMI)</div><span class="card-delete" onclick="deleteCard(this)" title="Remove card">×</span></div><div class="card-body"><div class="card-detail-row"><div class="card-detail" contenteditable="true"><b><i>TMI quick general review of original source course to ensure probable compatibility as basis for a template.</i></b></div></div><ul class="steps" id="steps-new-7"><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
     <span class="step-num">1</span>
     <div class="step-body">
@@ -306,7 +306,7 @@
         <div class="step-text" contenteditable="true">Course completeness</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-    <div class="detail-row"><div class="step-detail" contenteditable="true">Is it a full course (not a shell or partial build)?</div></div></div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">- Is it a full course (not a shell or partial build)?</div></div></div>
   </li><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
     <span class="step-num">2</span>
@@ -315,8 +315,8 @@
         <div class="step-text" contenteditable="true">Course age / currency</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-    <div class="detail-row"><div class="step-detail" contenteditable="true">Has it been taught recently? Is the content still current?</div></div></div>
-  </li><li class="step"><span class="drag-grip" title="Drag to reorder">â&nbsp;¿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Clarity</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Is the course generally structured in a logical fashion using standard tools and options?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Complexity</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Check for overly complex elements that may make the course difficult/unsuitable for transfer.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">3rd party content</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">Ownership issues?, publisher stuff?&nbsp; OER?&nbsp; LTIs?</div></div></div></li><li class="step">
+    <div class="detail-row"><div class="step-detail" contenteditable="true">- Has it been taught recently? Is the content still current?</div></div></div>
+  </li><li class="step"><span class="drag-grip" title="Drag to reorder">â&nbsp;¿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">3</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Clarity</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Is the course generally structured in a logical fashion using standard tools and options?</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">4</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Complexity</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Check for overly complex elements that may make the course difficult/unsuitable for transfer.</div></div></div></li><li class="step"><span class="drag-grip" title="Drag to reorder">⠿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">3rd party content</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Ownership issues?, publisher stuff?&nbsp; OER?&nbsp; LTIs? paywalls?</div></div></div></li><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
     <span class="step-num">6</span>
     <div class="step-body">
@@ -324,8 +324,8 @@
         <div class="step-text" contenteditable="true">Accessibility</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-    <div class="detail-row"><div class="step-detail" contenteditable="true">Are there known a11y issues that would need to be resolved before handoff?</div></div></div>
-  </li></ul><div class="add-step" onclick="addStep(this)">+ Add step</div></div></div></div><div class="card" id="card-new-4" data-collapsed="false">
+    <div class="detail-row"><div class="step-detail" contenteditable="true">- Are there significant a11y issues that need to be resolved before handoff?</div></div></div>
+  </li><li class="step"><span class="drag-grip" title="Drag to reorder">â&nbsp;¿</span><div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">7</div><div class="step-body"><div class="step-text-wrapper"><div class="step-text" contenteditable="true">Look for OER content</div><span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span></div><div class="detail-row"><div class="step-detail" contenteditable="true">- Preferred</div></div></div></li></ul><div class="add-step" onclick="addStep(this)">+ Add step</div></div></div></div><div class="card" id="card-new-4" data-collapsed="false">
       <div class="card-collapse-bar" onclick="toggleCollapse(this)" title="Collapse / expand">
         <span class="card-collapse-chevron">▲</span>
       </div>
@@ -357,7 +357,7 @@
         <div class="step-text" contenteditable="true">Remove instructor bio / profile references</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-      <div class="detail-row"><div class="step-detail" contenteditable="true">Check syllabus, intro pages, About the Instructor content, etc.</div></div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- Check syllabus, intro pages, About the Instructor content, etc.</div></div>
     </div>
   </li><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
@@ -367,7 +367,7 @@
         <div class="step-text" contenteditable="true">Check media files for personalized content</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-      <div class="detail-row"><div class="step-detail" contenteditable="true">Review videos and audio for anything course- or instructor-specific.</div></div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- Review videos and audio for anything course- or instructor-specific.</div></div>
     </div>
   </li><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
@@ -384,11 +384,11 @@
               <div class="step-num" onclick="this.closest('.step').classList.toggle('done')" title="Mark complete">5</div>
               <div class="step-body">
                 <div class="step-text-wrapper">
-                  <div class="step-text" contenteditable="true">Remove all dates: within content (edit) and in item settings (Adjust-All)</div>
+                  <div class="step-text" contenteditable="true">Remove all dates within content and item settings</div>
                   <span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span>
                 </div>
-                <span class="add-detail" onclick="addDetail(this)">+ detail</span>
-              </div>
+                
+              <div class="detail-row"><div class="step-detail" contenteditable="true">- Remove any referenced dates within the content.<div>- Use Adjust-All to remove all course Due/Availability dates, etc.</div></div></div></div>
             </li>
             
           <li class="step">
@@ -409,7 +409,7 @@
       <div class="step-text" contenteditable="true">Check for viability of 3rd party services</div>
       <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
     </div>
-    <div class="detail-row"><div class="step-detail" contenteditable="true">- Publisher platforms, media tools, or any service tied to the donor's personal credentials.<div>- Some may be free and not require a user account.</div></div></div>
+    <div class="detail-row"><div class="step-detail" contenteditable="true">- Publisher platforms, media tools, or any service tied to the donor's personal credentials, paid accounts, paywalls, etc.<div>- NOTE: Some external resources may be free and not require a user account.</div></div></div>
   </div>
 </li><li class="step">
     <span class="drag-grip" style="align-self:flex-start;padding-top:10px;">⠿</span>
@@ -429,7 +429,7 @@
         <div class="step-text" contenteditable="true">Check and fix accessibility issues</div>
         <span class="step-title-delete" onclick="this.closest('.step').remove()">✕</span>
       </div>
-      <div class="detail-row"><div class="step-detail" contenteditable="true">Alt text on images, heading structure, caption videos, etc.</div></div>
+      <div class="detail-row"><div class="step-detail" contenteditable="true">- Run the Accessibility Dashboard to ensure ADA compliance.</div></div>
     </div>
   </li></ul>
           <div class="add-step" onclick="addStep(this)">+ Add step</div>
