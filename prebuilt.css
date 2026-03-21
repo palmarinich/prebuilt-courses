@@ -1,4 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
+/* Suppress transitions on page load for collapsed cards */
+body.no-transition * { transition: none !important; }
+
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
