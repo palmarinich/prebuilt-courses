@@ -118,7 +118,7 @@ window.addStep = function(trigger) {
     '<div class="step-body">' +
       '<div class="step-text-wrapper">' +
         '<div class="step-text" contenteditable="true">New step</div>' +
-        '<span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">✕</span>' +
+        '<span class="step-title-delete" onclick="deleteStep(this)" title="Remove step">&times;</span>' +
       '</div>' +
       '<span class="add-detail" onclick="addDetail(this)">+ detail</span>' +
     '</div>';
@@ -145,7 +145,7 @@ window.addDetail = function(btn) {
   var row = document.createElement('div');
   row.className = 'detail-row';
   row.innerHTML =
-    '<div class="step-detail" contenteditable="true">- </div>';
+    '<div class="step-detail" contenteditable="true">Detail</div>';
   body.appendChild(row);
   row.querySelector('[contenteditable]').focus();
 };
@@ -358,6 +358,10 @@ window.savePage = async function() {
 // ── Init ─────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Suppress transitions on load so collapsed cards don't animate open-then-closed
+  document.body.classList.add('no-transition');
+  setTimeout(function() { document.body.classList.remove('no-transition'); }, 50);
+
   document.querySelectorAll('.steps').forEach(function(list) {
     if (list.id) initStepsSortable(list.id);
   });
